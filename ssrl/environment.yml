@@ -2,7 +2,7 @@ name: ssrl
 channels:
   - defaults
 dependencies:
-  - python=3.9.0=hdb3f193_2
+  - python=3.11.10
   - pip
   - pip:
       - dill==0.3.7
@@ -12,4 +12,4 @@ dependencies:
       - omegaconf==2.3.0
       - submitit==1.4.6
       - wandb==0.15.5
-      - torch==2.1.0
+      - torch==2.5.0

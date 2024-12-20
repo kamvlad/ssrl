@@ -16,7 +16,7 @@ Here we create a conda environment, install JAX for CUDA, and then install the p
 ```sh
 conda env create -n ssrl --file environment.yml
 conda activate ssrl
-pip install -U "jax[cuda12_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+pip install -U "jax[cuda12_pip]"==0.4.35 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 pip install -e .
 ```
 

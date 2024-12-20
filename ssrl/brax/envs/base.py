@@ -37,8 +37,8 @@ class State:
   done: jp.ndarray
   metrics: Dict[str, jp.ndarray] = struct.field(default_factory=dict)
   info: Dict[str, Any] = struct.field(default_factory=dict)
-  u: jp.ndarray = jp.array([])  # used by RLWAM
-  prev_obs: jp.ndarray = jp.array([]) # used by RLWAM
+  u: jp.ndarray = struct.field(default_factory=lambda: jp.array([]))  # used by RLWAM
+  prev_obs: jp.ndarray = struct.field(default_factory=lambda: jp.array([])) # used by RLWAM
 
 
 class Env(abc.ABC):
