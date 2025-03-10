@@ -61,7 +61,7 @@ def train_go1(cfg: DictConfig):
         config_dict = OmegaConf.to_container(cfg, resolve=True,
                                              throw_on_missing=True)
         wandb.init(project=('go1_' + cfg.algo),
-                   entity=cfg.wandb.entity,
+                   #entity=cfg.wandb.entity,
                    name=run_name,
                    config=config_dict)
     print(OmegaConf.to_yaml(cfg))
